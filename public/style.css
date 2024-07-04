@@ -1,0 +1,172 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and container styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('bgbg.jpg');
+    background-size: cover;
+    
+}
+
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Form styles */
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #666;
+}
+
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #333;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+input[type="number"]:focus,
+input[type="text"]:focus {
+    outline: none;
+    border-color: #85b7d9;
+}
+
+.error {
+    color: red;
+    font-size: 14px;
+}
+
+button[type="submit"] {
+    align-self: center;
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.submitbutton {
+    display: flex;
+    justify-content: center;
+    /* Aligns items horizontally center */
+}
+
+.submitbutton button[type="submit"] {
+    /* Optionally, you can add styles to the button itself */
+    /* For example: */
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.submitbutton button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+
+.submitbutton {
+    width: 100%;
+    align-items: center;
+}
+
+
+/* Results section styles */
+#results {
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+#results h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#prediction,
+#probability {
+    margin-bottom: 20px;
+}
+
+#prediction h3,
+#probability h3 {
+    font-size: 20px;
+    color: #555;
+}
+
+#prediction p,
+#probability li {
+    font-size: 18px;
+    color: #333;
+    margin-top: 8px;
+}
+
+#probability ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+@media (max-width: 768px) {
+    #results {
+        padding: 16px;
+    }
+
+    #results h2 {
+        font-size: 20px;
+    }
+
+    #prediction h3,
+    #probability h3 {
+        font-size: 18px;
+    }
+
+    #prediction p,
+    #probability li {
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water Quality Prediction</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Water Quality Input Form</h2>
+        <form id="waterQualityForm" onsubmit="getData(event)">
+            <div class="form-group">
+                <label for="stateCode">State Code</label>
+                <input type="text" id="stateCode" name="stateCode" required>
+                <div class="error" id="stateCodeError"></div>
+            </div>
+            <div class="form-group">
+                <label for="state">State</label>
+                <input type="text" id="state" name="state" required>
+                <div class="error" id="stateError"></div>
+            </div>
+            <div class="form-group">
+                <label for="tMin">Temperature Min (°C)</label>
+                <input type="number" id="tMin" name="tMin" step="0.1" required>
+                <div class="error" id="tMinError"></div>
+            </div>
+            <div class="form-group">
+                <label for="tMax">Temperature Max (°C)</label>
+                <input type="number" id="tMax" name="tMax" step="0.1" required>
+                <div class="error" id="tMaxError"></div>
+            </div>
+            <div class="form-group">
+                <label for="pHmin">pH Min</label>
+                <input type="number" id="pHmin" name="pHmin" step="0.01" min="0" max="14" required>
+                <div class="error" id="pHminError"></div>
+            </div>
+            <div class="form-group">
+                <label for="pHmax">pH Max</label>
+                <input type="number" id="pHmax" name="pHmax" step="0.01" min="0" max="14" required>
+                <div class="error" id="pHmaxError"></div>
+            </div>
+            <div class="form-group">
+                <label for="cMin">Conductivity Min (μS/cm)</label>
+                <input type="number" id="cMin" name="cMin" step="0.01" required>
+                <div class="error" id="cMinError"></div>
+            </div>
+            <div class="form-group">
+                <label for="cMax">Conductivity Max (μS/cm)</label>
+                <input type="number" id="cMax" name="cMax" step="0.01" required>
+                <div class="error" id="cMaxError"></div>
+            </div>
+            <div class="form-group">
+                <label for="bMin">BOD Min (mg/L)</label>
+                <input type="number" id="bMin" name="bMin" step="0.01" required>
+                <div class="error" id="bMinError"></div>
+            </div>
+            <div class="form-group">
+                <label for="bMax">BOD Max (mg/L)</label>
+                <input type="number" id="bMax" name="bMax" step="0.01" required>
+                <div class="error" id="bMaxError"></div>
+            </div>
+            <div class="form-group">
+                <label for="nMin">Nitrate Min (mg/L)</label>
+                <input type="number" id="nMin" name="nMin" step="0.01" required>
+                <div class="error" id="nMinError"></div>
+            </div>
+            <div class="form-group">
+                <label for="nMax">Nitrate Max (mg/L)</label>
+                <input type="number" id="nMax" name="nMax" step="0.01" required>
+                <div class="error" id="nMaxError"></div>
+            </div>
+            <div class="form-group">
+                <label for="year">Year</label>
+                <input type="number" id="year" name="year" min="1900" max="2100" required>
+                <div class="error" id="yearError"></div>
+            </div>
+            <div class="submitbutton">
+                <button type="submit">Get Data</button>
+            </div>
+            <div id="results">
+                <h2>Prediction Results</h2>
+                <div id="prediction">
+                    <h3>Prediction:</h3>
+                    <p id="boolean"></p>
+                </div>
+                <div id="probability">
+                    <h3>Probability:</h3>
+                    <p id="probabily"></p>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

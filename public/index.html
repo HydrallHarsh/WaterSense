@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Drinking Water Statistics</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<script>
+  window.watsonAssistantChatOptions = {
+    integrationID: "4639beb3-74bb-4ade-a5dd-e36250fa1117", // The ID of this integration.
+    region: "us-south", // The region your integration is hosted in.
+    serviceInstanceID: "efb6a979-900e-462e-94e6-1d0b85578975", // The ID of your service instance.
+    onLoad: async (instance) => { await instance.render(); }
+  };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+    document.head.appendChild(t);
+  });
+</script>
+
+<body>
+  <header>
+    <h1><strong>WaterSense</strong></h1>
+  </header>
+
+  <main>
+    <section id="prediction">
+      <h1>Water Potability Prediction</h1>
+      <p><strong><u>Click the button below</u></strong> to predict the potability of water based on various parameters.</p>
+      <a href="form.html" class="button">Predict Potability</a>
+    </section>
+    <section id="statistics">
+      <h2>Statistics</h2>
+      <p>Global access to drinking water has improved, but it is still a problem in many areas. Here are some statistics:</p>
+      <ul>
+        <li>785 million people lack basic drinking water services.</li>
+        <li>2 billion people use a drinking water source contaminated with feces.</li>
+        <li>Every day, over 800 children under age 5 die from diarrhea attributable to poor water and sanitation.</li>
+      </ul>
+      <br>
+      <h2> Importance of a Safe Water Supply in India</h3>
+      <ul>
+        <li><h3>Economic Burden</h3></li>
+        <p>Waterborne diseases impose an economic burden of approximately <strong>USD 600 million</strong> annually in India, especially affecting drought- and flood-prone areas, which have impacted a third of the population recently.</p>
+
+        <li><h3>Groundwater Depletion</h3></li>
+        <p>Two-thirds of India's 718 districts face extreme water depletion. India, the world's highest user of groundwater, has rapidly depleted its supplies due to extensive drilling. Groundwater provides <strong>85%</strong> of rural and <strong>48%</strong> of urban drinking water needs (Source: JMP 2017).</p>
+
+        <li><h3>Child Rights and Water Access</h3></li>
+        <p>According to the Convention on the Rights of a Child, all children have the right to clean water and basic sanitation. UNICEF aims to ensure every child fulfills this right.</p>
+
+        <li><h3>Impact on Education</h3></li>
+        <p>Lack of a safe and reliable water source often forces women and children to collect water. This responsibility leads to decreased school attendance, with a <strong>22%</strong> increase in dropout rates reported in drought-affected states.</p>
+
+        <li><h3>Women and Water Collection</h3></li>
+        <p>Approximately <strong>54%</strong> of rural women and some adolescent girls spend an estimated <strong>35 minutes</strong> daily collecting water, equivalent to <strong>27 lost days' wages</strong> annually (Source: Analysis of the Situation of Children, Adolescents, and Women in India 2016).</p>
+
+        <li><h3>Access to Safe Water</h3></li>
+        <p>In 2015, India achieved <strong>93%</strong> coverage of access to improved water supply in rural areas. However, the shift to Sustainable Development Goals (SDGs) revealed that less than <strong>49%</strong> of the rural population uses safely managed drinking water (Source: JMP 2017).</p>
+    </ul>
+      <br>
+      <h2>Water Drinking Standards</h2>
+      <h3>Table for Organoleptic and Physical parameters</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Sr. No.</th>
+            <th>Substance/characteristic</th>
+            <th>Requirement (Desirable Limit)</th>
+            <th>Permissible limit in the absence of alternate source</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>i.</td>
+            <td>Colour, Hazen units, Max</td>
+            <td>5</td>
+            <td>15</td>
+          </tr>
+          <tr>
+            <td>ii.</td>
+            <td>Dissolved solids, mg/L</td>
+            <td>500</td>
+            <td>2000</td>
+          </tr>
+          <tr>
+            <td>iii.</td>
+            <td>Odour</td>
+            <td>Agreeable</td>
+            <td>Agreeable</td>
+          </tr>
+          <tr>
+            <td>iv.</td>
+            <td>pH value</td>
+            <td>6.5-8.5</td>
+            <td>No Relaxation</td>
+          </tr>
+          <tr>
+            <td>v.</td>
+            <td>Taste</td>
+            <td>Agreeable</td>
+            <td>Agreeable</td>
+          </tr>
+          <tr>
+            <td>vi.</td>
+            <td>Total hardness (as CaCO3), mg/l, Max</td>
+            <td>200</td>
+            <td>600</td>
+          </tr>
+          <tr>
+            <td>vii.</td>
+            <td>Turbidity, NTU, Max</td>
+            <td>1</td>
+            <td>5</td>
+          </tr>
+        </tbody>
+      </table>
+      <p><em>Source: adapted from BIS, 2012.</em></p>
+    </section>
+    <br>
+    <section id="bacteriological-quality">
+      <h3>Table for Bacteriological quality of drinking water</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Organisms</th>
+            <th>Guidelines</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>All water intended for drinking</strong><br><em>E. coli</em> or thermotolerant coliform bacteria<sup>b,c</sup></td>
+            <td>Must not be detectable in any 100 ml sample.</td>
+          </tr>
+          <tr>
+            <td rowspan="2"><strong>Treated water entering the distribution system</strong> <br><em>E. coli</em> or thermotolerant coliform bacteria<sup>b</sup><br>Total coliform bacteria</td>
+            <td>Must not be detectable in any 100 ml sample. Must not be detectable in any 100 ml sample.</td>
+          </tr>
+          <tr>
+            <td>Must not be detectable in any 100 ml sample.</td>
+          </tr>
+          <tr>
+            <td><strong>Treated water in the distribution system</strong><br><em>E. coli</em> or thermo tolerant coliform Bacteria Total coliform bacteria<sup>d</sup></td>
+            <td>
+              Must not be detectable in any 100 ml sample.<br>
+              Must not be detectable in any 100 ml sample. In the case of large supplies, where sufficient samples are examined, must not be present in 95% of samples taken throughout any 12 month period.
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <p><em>Source: adapted from BIS, 2012.</em></p>
+    </section>
+    
+    <section id="articles">
+      <h2>Articles</h2>
+      <div class="article-container">
+        <div class="article-card">
+          <img src="https://cdn.shopify.com/s/files/1/1537/5723/files/water-quality-1640x840.jpg?v=1646771585"
+            alt="Stock Image">
+          <h3>Water Quality: Information, Importance and Testing
+          </h3>
+          <p>Clean water is essential for health and well-being.</p>
+          <a href="https://svalbardi.com/blogs/water/quality">Read more</a>
+        </div>
+        <div class="article-card">
+          <img src="./article2.jpeg.jpg" alt="DNA Article Image">
+          <h3>Water Quality Basics</h3>
+          <p>Essentially, water used for consumption comes from two sources: groundwater and surface water.</p>
+          <a href="https://www.linkedin.com/pulse/water-quality-basics-rajul-parikh/">Read more</a>
+        </div>
+        <div class="article-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgK_fD-7PolrGuoWnp3afUFgjxo3CYafSM5w&s"
+            alt="Water Contamination Image">
+          <h3>Water contamination: Still a serious national challenge</h3>
+          <p>Wide spread water contamination is a daunting challenge in India with 1,95,813 habitations in the country
+            reported to have poor water quality, posing serious health risks to the population.</p>
+          <a
+            href="https://timesofindia.indiatimes.com/blogs/voices/water-contamination-still-a-serious-national-challenge/">Read
+            more</a>
+        </div>
+        <div class="article-card">
+          <img src="https://www.worldbank.org/content/dam/photos/768x384/2022/mar/Water-Day_Atal-Bhujal-Yojna-Thumbnail.JPG" alt="DNA Article Image">
+          <h3>How is India addressing its water needs?</h3>
+          <p>Groundwater is one of the most important sources for irrigation as well as for rural and urban domestic water supply. However, overexploitation of this valuable resource has led to its depletion.</p>
+          <a href="https://www.worldbank.org/en/country/india/brief/world-water-day-2022-how-india-is-addressing-its-water-needs">Read more</a>
+        </div>
+        <!-- Add more article cards as needed -->
+      </div>
+    </section>
+
+    
+  </main>
+
+  <footer>
+    <p>&copy; 2024 WaterSense</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
