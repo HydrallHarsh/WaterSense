@@ -43,7 +43,7 @@ function getData(event) {
     ],
   };
 
-  fetch("https://watersense.onrender.com/form.html", {
+  fetch("https://watersense.onrender.com", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
